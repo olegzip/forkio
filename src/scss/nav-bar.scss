@@ -9,7 +9,7 @@
 }
 
 .background-img-header {
-  background-image: url("/src/img/bg-img-header.png");
+  background-image: url("/img/bg-img-header.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -24,12 +24,8 @@
 
 .nav-bar-title {
   display: flex;
-
-}
-
-section {
-  font-size: 40px;
-  color: yellow;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-bar-title-text {
@@ -37,8 +33,18 @@ section {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-
+  &:hover {
+    color: white;
+  }
 }
+
+.nav-bar-title-logo-img {
+  margin-right: 2rem;
+  &:hover{
+    filter:brightness(0) invert(1);
+  }
+}
+
 
 .nav-bar-title-text {
   font-family: Lato, sans-serif;
@@ -67,6 +73,10 @@ section {
   font-weight: 700;
   line-height: 15px; /* Приближение из-за подстановки шрифтов */
   text-align: left;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .nav-bar-item-btn {
@@ -85,4 +95,9 @@ section {
   font-weight: 700;
   line-height: 15px; /* Приближение из-за подстановки шрифтов */
   //text-align: center;
+  &:hover {
+    background-color: white;
+    color: rgb(142, 130, 173);
+  }
 }
+
