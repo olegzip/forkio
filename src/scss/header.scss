@@ -71,9 +71,11 @@
   height: 62px;
   background-color: #8e82ad;
   border-radius: 20px;
-  //position: relative;
-  //transform: scaleY(-50%);
+  position: relative;
+  //transform: scaleY(-50px);
+  transform: translateY(-50%);
   &:hover {
+
     background-color: #fff;
     color: #8d81ac;
   }

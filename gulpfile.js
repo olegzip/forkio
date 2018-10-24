@@ -114,6 +114,11 @@ gulp.task('copy-html', () => {
         .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('clean-css', () => {
+    return gulp.src('./src/css/', {read: false})
+        .pipe(clean());
+});
+
 // tasks for CSS files
 
 gulp.task('sass', () => {
