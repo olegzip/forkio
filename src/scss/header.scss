@@ -1,9 +1,10 @@
 .header {
-  height: 90vh;
+  height: 89.8vh;
   background-image: url("/img/bg-img-header.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
 }
 
 .header-items {
@@ -52,3 +53,57 @@
   line-height: 15px; /* Приближение из-за подстановки шрифтов */
   text-align: center;
 }
+
+.sub-header {
+  display: flex;
+  justify-content: center;
+  //padding-top: 10px;
+  //position: relative;
+  //transform: scaleY(-50%);
+}
+
+.sub-header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  color: white;
+  height: 62px;
+  background-color: #8e82ad;
+  border-radius: 20px;
+  //position: relative;
+  //transform: scaleY(-50%);
+  &:hover {
+    background-color: #fff;
+    color: #8d81ac;
+  }
+}
+
+.sub-header-btn-text {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  font-size: 21.01px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  &:hover {
+    color: #8d81ac;
+  }
+}
+
+.sub-header-under-btn-text {
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif;
+  color: #848e97;
+  font-size: 16px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin-top: 1rem;
+}
+
