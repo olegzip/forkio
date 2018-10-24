@@ -8,10 +8,11 @@
   margin: 0 auto;
 }
 
-
 .nav {
   background-color: #222125;
 }
+
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -31,6 +32,7 @@
   align-items: center;
   text-align: center;
   &:hover {
+    transition: 0.2s;
     color: white;
   }
 }
@@ -38,6 +40,7 @@
 .nav-bar-title-logo-img {
   margin-right: 2rem;
   &:hover {
+    transition: 0.3s;
     filter: brightness(0) invert(1);
   }
 }
@@ -71,6 +74,7 @@
   text-align: left;
 
   &:hover {
+    transition: 0.3s;
     color: white;
   }
 }
@@ -87,11 +91,12 @@
   align-items: center;
   font-family: Montserrat, sans-serif;
   color: #ffffff;
-  font-size: 20px; /* Приближение из-за подстановки шрифтов */
+  font-size: 17px; /* Приближение из-за подстановки шрифтов */
   font-weight: 700;
   line-height: 15px; /* Приближение из-за подстановки шрифтов */
   //text-align: center;
   &:hover {
+    transition: 0.3s;
     background-color: white;
     color: rgb(142, 130, 173);
   }

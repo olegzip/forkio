@@ -4,12 +4,10 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  position: relative;
 }
 
 .header-items {
   display: flex;
-  //justify-content: center;
   flex-direction: column;
   align-items: center;
 }
@@ -22,10 +20,9 @@
   text-align: center;
   font-family: Montserrat, sans-serif;
   color: #ffffff;
-  font-size: 82px; /* Приближение из-за подстановки шрифтов */
+  font-size: 82px;
   font-weight: 700;
-  line-height: 15px; /* Приближение из-за подстановки шрифтов */
-  //text-align: center;
+  line-height: 15px;
   margin-bottom: 3rem;
 }
 
@@ -35,9 +32,9 @@
   align-items: center;
   font-family: Lato, sans-serif;
   color: #8d81ac;
-  font-size: 30px; /* Приближение из-за подстановки шрифтов */
+  font-size: 30px;
   font-weight: 400;
-  line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  line-height: 15px;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -48,18 +45,15 @@
   align-items: center;
   font-family: Montserrat, sans-serif;
   color: #848e97;
-  font-size: 16px; /* Приближение из-за подстановки шрифтов */
+  font-size: 16px;
   font-weight: 400;
-  line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  line-height: 15px;
   text-align: center;
 }
 
 .sub-header {
   display: flex;
   justify-content: center;
-  //padding-top: 10px;
-  //position: relative;
-  //transform: scaleY(-50%);
 }
 
 .sub-header-btn {
@@ -67,55 +61,59 @@
   justify-content: center;
   align-items: center;
   width: 390px;
-  //color: #8d81ac;
   height: 62px;
   background-color: #8e82ad;
   border-radius: 30px;
-  //position: relative;
-  //transform: scaleY(-50px);
   transform: translateY(-50%);
   &:hover {
+    transition: 0.3s;
     background-color: white;
     color: rgb(142, 130, 173);
   }
-
-  //&:hover {
-  //  background-color: #fff;
-  //  color: #8d81ac;
-  //}
 }
-
-//.sub-header-btn:hover {
-//  color: #8d81ac;
-//background-color: white;
-//}
 
 .sub-header-btn-text {
   display: flex;
   justify-content: center;
   font-family: Montserrat, sans-serif;
   color: white;
-  font-size: 21.01px; /* Приближение из-за подстановки шрифтов */
+  font-size: 21.01px;
   font-weight: 700;
-  line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  line-height: 15px;
   text-align: center;
-  //&:hover {
-  //  color: #8d81ac;
-  //}
-
 }
 
 .sub-header-under-btn-text {
   display: flex;
-  //justify-content: center;
-  //align-items: center;
   flex-direction: column;
   font-family: Montserrat, sans-serif;
   color: #848e97;
-  font-size: 16px; /* Приближение из-за подстановки шрифтов */
-  //font-weight: 400;
-  //line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  font-size: 16px;
   text-align: center;
-  //margin-top: 1rem;
+}
+
+.revol-title {
+  margin-top: 4rem;
+  font-family: Montserrat, sans-serif;
+  color: #635c73;
+  font-size: 54.01px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+
+.revol-sub-title {
+  margin-top: 4rem;
+  font-family: Lato, sans-serif;
+  color: #323232;
+  align-items: center;
+  text-align: center;
+  font-size: 21.01px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 23.476px; /* Приближение из-за подстановки шрифтов */
+}
+
+.revol-git-items {
+  margin-bottom: 4rem;
 }
 
