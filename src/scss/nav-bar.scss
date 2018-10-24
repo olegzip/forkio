@@ -8,13 +8,10 @@
   margin: 0 auto;
 }
 
-.background-img-header {
-  background-image: url("/img/bg-img-header.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 
+.nav {
+  background-color: #222125;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -40,11 +37,10 @@
 
 .nav-bar-title-logo-img {
   margin-right: 2rem;
-  &:hover{
-    filter:brightness(0) invert(1);
+  &:hover {
+    filter: brightness(0) invert(1);
   }
 }
-
 
 .nav-bar-title-text {
   font-family: Lato, sans-serif;
