@@ -3,8 +3,10 @@
   list-style: none;
 }
 
+$purple-color: #8d81ac;
+
 .header {
-  height: 89.8vh;
+  height: 93vh;
   background-image: url("/img/bg-img-header-jpg.jpg");
   background-size: cover;
   background-position: center;
@@ -32,12 +34,14 @@
 }
 
 .header-sub-title {
+  border-width: 1px;
+  border-color: $purple-color;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: Lato, sans-serif;
-  color: #8d81ac;
+  color: $purple-color;
   font-size: 30px;
   font-weight: 400;
   line-height: 15px;
@@ -71,10 +75,11 @@
   align-items: center;
   text-align: center;
   color: white;
-  background-color: #8d81ac;
-  width: 390px;
+  background-color: $purple-color;
+  width: 100%;
   height: 62px;
-  border-radius: 20px;
+  cursor: pointer;
+  border-radius: 30px;
   box-sizing: border-box;
   transition: 0.3s;
   font-size: 21px;
@@ -85,16 +90,8 @@
   }
 }
 
-.test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-  color: white;
-  text-align: center;
-  &:hover {
-    color: #8d81ac;
-  }
+.revol   {
+
 }
 
 .revol-title {
@@ -108,6 +105,8 @@
 }
 
 .revol-sub-title {
+  display: flex;
+  justify-content: center;
   margin-top: 4rem;
   font-family: Lato, sans-serif;
   color: #323232;
@@ -131,23 +130,110 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 20px;
+  margin: 3rem;
 }
 
+
+//.nav {
+//  display: flex;
+//}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-title {
+  //margin-right: rem;
+}
+
+
+
 @media screen and (max-width: 320px) {
-    .header {
-      display: flex;
-    }
+  .nav-bar-title {
+    margin-left: 1rem;
+  }
+
   .header-title {
     display: flex;
-    justify-content: space-around;
-    //align-items: center;
-    color: #222125;
-    line-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    //line-height: 50px;
+    margin-top: 2rem;
+  }
+
+  .header {
+    height: 93vh;
+    background-image: url("/img/bg-img-header-jpg.jpg");
+    //background-size: 100% contain;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   .header-sub-title {
     line-height: 30px;
   }
+
+  .header-under-sub-title {
+    line-height: 2px;
+  }
+
+  .nav-bar-title-text, .nav-bar-item {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+
+
+
+
+
+  .nav-bar-item-btn {
+    //width: 320px;
+    display: flex;
+    justify-content: center;
+    //justify-content: center;
+
+    //justify-content: flex-start;
+    //flex-direction: row;
+    //align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+  }
+
+  .revol-title {
+    font-family: Montserrat, sans-serif;
+    color: #635c73;
+    font-size: 25.99px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 30.813px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+  }
+
+  .revol-sub-title {
+    margin-bottom: 1rem;
+    font-family: Lato, sans-serif;
+    color: #323232;
+    align-items: center;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 14.673px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+  }
+
+  .github-button {
+    //display: flex;
+    //justify-content: left;
+    display: flex;
+  }
+
 }
 

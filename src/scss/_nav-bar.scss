@@ -37,7 +37,7 @@
 }
 
 .nav-bar-title-logo-img {
-  margin-right: 2rem;
+  margin-right: 1rem;
   transition: .3s;
   &:hover {
     filter: brightness(0) invert(1);
@@ -64,7 +64,7 @@
   display: flex;
   //justify-content: center;
   /*   justify-content: space-around; */
-  margin: 30px;
+  margin: 40px;
   font-family: Montserrat, sans-serif;
   color: #8d81ac;
   font-size: 16px; /* Приближение из-за подстановки шрифтов */
@@ -76,6 +76,10 @@
     color: white;
   }
 }
+
+//.github-button {
+//  margin: 20px;
+//}
 
 .nav-bar-item-btn {
   height: 38px;
