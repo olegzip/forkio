@@ -12,7 +12,6 @@
   background-color: #222125;
 }
 
-
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -31,16 +30,16 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  transition: .3s;
   &:hover {
-    transition: 0.2s;
     color: white;
   }
 }
 
 .nav-bar-title-logo-img {
   margin-right: 2rem;
+  transition: .3s;
   &:hover {
-    transition: 0.3s;
     filter: brightness(0) invert(1);
   }
 }
@@ -72,9 +71,8 @@
   font-weight: 700;
   line-height: 15px; /* Приближение из-за подстановки шрифтов */
   text-align: left;
-
+  transition: 0.3s;
   &:hover {
-    transition: 0.3s;
     color: white;
   }
 }
@@ -95,8 +93,8 @@
   font-weight: 700;
   line-height: 15px; /* Приближение из-за подстановки шрифтов */
   //text-align: center;
+  transition: 0.3s;
   &:hover {
-    transition: 0.3s;
     background-color: white;
     color: rgb(142, 130, 173);
   }
