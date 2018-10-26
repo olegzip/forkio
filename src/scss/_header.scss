@@ -1,6 +1,11 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
 .header {
   height: 89.8vh;
-  background-image: url("/img/bg-img-header-jpg.jpg");
+  background-image: url("/src/img/bg-img-header-jpg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -30,12 +35,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: Lato, sans-serif;
   color: #8d81ac;
   font-size: 30px;
   font-weight: 400;
   line-height: 15px;
-  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -54,42 +59,76 @@
 .sub-header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
+//.sub-header-btn {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  width: 390px;
+//  height: 62px;
+//  background-color: #8e82ad;
+//  border-radius: 30px;
+//  transform: translateY(-50%);
+//  &:hover {
+//    transition: 0.3s;
+//    background-color: white;
+//    color: rgb(142, 130, 173);
+//  }
+//}
+//
+//.sub-header-btn-text {
+//  display: flex;
+//  justify-content: center;
+//  font-family: Montserrat, sans-serif;
+//  color: white;
+//  font-size: 21.01px;
+//  font-weight: 700;
+//  line-height: 15px;
+//  text-align: center;
+//}
+//
+//.sub-header-under-btn-text {
+//  display: flex;
+//  flex-direction: column;
+//  font-family: Montserrat, sans-serif;
+//  color: #848e97;
+//  font-size: 16px;
+//  text-align: center;
+//}
+//
+
+
 .sub-header-btn {
+  font-family: Montserrat, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 390px;
-  height: 62px;
-  background-color: #8e82ad;
-  border-radius: 30px;
-  transform: translateY(-50%);
+  text-align: center;
+  background-color: #8d81ac;
+  width: 280px;
+  height: 50px;
+  border-radius: 20px;
+  box-sizing: border-box;
   &:hover {
-    transition: 0.3s;
     background-color: white;
-    color: rgb(142, 130, 173);
+    transition: 0.3s;
+    color: #8d81ac;
   }
 }
 
-.sub-header-btn-text {
+.test {
   display: flex;
   justify-content: center;
-  font-family: Montserrat, sans-serif;
+  align-items: center;
+  font-size: 17px;
   color: white;
-  font-size: 21.01px;
-  font-weight: 700;
-  line-height: 15px;
   text-align: center;
-}
-
-.sub-header-under-btn-text {
-  display: flex;
-  flex-direction: column;
-  font-family: Montserrat, sans-serif;
-  color: #848e97;
-  font-size: 16px;
-  text-align: center;
+  &:hover {
+    color: #8d81ac;
+  }
 }
 
 .revol-title {
@@ -114,6 +153,18 @@
 }
 
 .revol-git-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
   margin-bottom: 4rem;
+}
+
+.revol-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
 }
 
