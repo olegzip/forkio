@@ -1,0 +1,144 @@
+@media screen and (max-width: 480px) {
+  .nav-bar-title {
+    margin-left: 1rem;
+  }
+
+  .header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 2rem;
+  }
+
+
+  .header {
+    height: 50vh;
+    background-image: url("/img/bg-img-header-jpg.jpg");
+    //background-size: 100% contain;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .header-sub-title {
+    line-height: 30px;
+  }
+
+  .header-under-sub-title {
+    line-height: 2px;
+  }
+
+  .nav-bar-title-text, .nav-bar-item {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+
+  .nav-bar-item-btn {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+  }
+
+  .revol-title {
+    font-family: Montserrat, sans-serif;
+    color: #635c73;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 35.214px;
+    text-align: center;
+  }
+
+  .revol-sub-title {
+    margin-bottom: 1rem;
+    font-family: Lato, sans-serif;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.074px;
+    text-align: center;
+  }
+
+  .github-button {
+    display: flex;
+    justify-content: left;
+  }
+
+  .revol-sub-title {
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav-bar-title {
+    margin-left: 1rem;
+  }
+
+  .header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 2rem;
+  }
+
+  .header {
+    height: 30vh;
+    background-image: url("/img/bg-img-header-jpg.jpg");
+    //background-size: 100% contain;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .header-sub-title {
+    line-height: 30px;
+  }
+
+  .header-under-sub-title {
+    line-height: 2px;
+  }
+
+  .nav-bar-title-text, .nav-bar-item {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+
+  .nav-bar-item-btn {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .revol-title {
+    font-family: Montserrat, sans-serif;
+    color: #635c74;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .revol-sub-title {
+    margin-bottom: 1rem;
+    font-family: Lato, sans-serif;
+    color: #323232;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .github-button {
+    display: flex;
+    justify-content: left;
+  }
+}
