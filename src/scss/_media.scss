@@ -39,7 +39,7 @@
     margin: 6px 0;
     transition: 0.3s;
   }
-
+//transform origin
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -87,7 +87,7 @@
     line-height: 2px;
   }
 
-  .nav-bar-title-text, .nav-bar-item {
+  .nav-bar-item {
     visibility: hidden;
     clear: both;
     display: none;
