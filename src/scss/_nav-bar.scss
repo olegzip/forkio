@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 6rem;
+  margin-right: 1rem;
 }
 
 .nav-bar-title-text {
@@ -58,13 +58,10 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  /*   text-align: center; */
 }
 
 .nav-bar-item {
   display: flex;
-  //justify-content: center;
-  /*   justify-content: space-around; */
   margin: 40px;
   font-family: Montserrat, sans-serif;
   color: #8d81ac;
@@ -104,4 +101,7 @@
     color: rgb(142, 130, 173);
   }
 }
+
+
+
 
