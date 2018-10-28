@@ -1,0 +1,49 @@
+
+.features {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(244, 244, 244);
+
+  .container {
+    max-width: 400px;
+    display: grid;
+  }
+
+  &-item {
+    margin: 0 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #848e97;
+    padding: 10px 0;
+
+    h3 {
+      color: #323232;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  &__img-block {
+    overflow: hidden;
+
+    img {
+      width: 170%;
+      height: auto;
+    }
+  }
+}
+
+.section-title-two {
+  display: block;
+  padding: 0 15%;
+  text-align: center;
+
+  h2 {
+    font-family: Montserrat sans-serif;
+    color: #8d81ac;
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
