@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+
   .header {
     height: 50vh;
   }
@@ -17,7 +18,24 @@
 }
 
 @media screen and (max-width: 480px) {
-  .cursor {
+  .dropdown-menu {
+    width: 100%;
+    background-color: #303030;
+  }
+
+  .dropdown-menu-item {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 32.01px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 77.765px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    &:hover {
+      color: $purple-color;
+    }
+  }
+
+  .burger {
     margin-left: 2rem;
     transform-origin: center;
   }
@@ -40,211 +58,218 @@
     transform-origin: center;
   }
 
-    .change .bar1 {
-      -webkit-transform: rotate(-50deg) translate(-5px, 6px);
-      transform: rotate(-50deg) translate(-5px, 6px);
-    }
+  .change .bar1 {
+    -webkit-transform: rotate(-50deg) translate(-5px, 6px);
+    transform: rotate(-50deg) translate(-5px, 6px);
+  }
 
-    .change .bar2 {
-      opacity: 0;
-    }
+  .change .bar2 {
+    opacity: 0;
+  }
 
-    .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-6px, -8px);
-      transform: rotate(45deg) translate(-6px,-8px);
-    }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
 
-    .cursor {
-      cursor: pointer;
-    }
+  .burger {
+    cursor: pointer;
+  }
 
-    .nav-bar-title {
-      margin-left: 1rem;
-    }
+  .nav-bar-title {
+    margin-left: 1rem;
+  }
 
-    .header-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 50px;
-      margin-top: 2rem;
-    }
+  .header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 2rem;
+  }
 
-    .header {
-      height: 50vh;
-      background-image: url("/img/bg-img-header-jpg.jpg");
-      //background-size: 100% contain;
-      background-position: center;
-      background-attachment: fixed;
-    }
+  .header {
+    height: 50vh;
+    background-image: url("/img/bg-img-header-jpg.jpg");
+    //background-size: 100% contain;
+    background-position: center;
+    background-attachment: fixed;
+  }
 
-    .header-sub-title {
-      line-height: 30px;
-    }
+  .header-sub-title {
+    line-height: 30px;
+  }
 
-    .header-under-sub-title {
-      line-height: 2px;
-    }
+  .header-under-sub-title {
+    line-height: 2px;
+  }
 
-    .nav-bar-item {
-      visibility: hidden;
-      clear: both;
-      display: none;
-    }
+  .nav-bar-item {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
 
-    .nav-bar-item-btn {
-      display: flex;
-      justify-content: center;
+  .nav-bar-item-btn {
+    display: flex;
+    justify-content: center;
 
-    }
+  }
 
-    .hamburger {
-      display: flex;
-      justify-content: space-between;
-      width: 30px;
-      height: 30px;
-      background-color: white;
-    }
+  .hamburger {
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+  }
 
-    .revol-title {
-      font-family: Montserrat, sans-serif;
-      color: #635c73;
-      font-size: 42px;
-      font-weight: 700;
-      line-height: 35.214px;
-      text-align: center;
-    }
+  .revol-title {
+    font-family: Montserrat, sans-serif;
+    color: #635c73;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 35.214px;
+    text-align: center;
+  }
 
-    .revol-sub-title {
-      margin-bottom: 1rem;
-      font-family: Lato, sans-serif;
-      color: #323232;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 19.074px;
-      text-align: center;
-    }
+  .revol-sub-title {
+    margin-bottom: 1rem;
+    font-family: Lato, sans-serif;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.074px;
+    text-align: center;
+  }
 
-    .github-button {
-      display: flex;
-      justify-content: left;
+  .github-button {
+    display: flex;
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .dropdown-menu {
+    width: 100%;
+    background-color: #303030;
+  }
+
+  .dropdown-menu-item {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 25px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 77.765px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    &:hover {
+      color: $purple-color;
     }
   }
 
-
-
-
-
-  @media screen and (max-width: 320px) {
-    //.cursor {
-    //  display: flex;
-    //  justify-content: space-between;
-    //  flex-direction: column;
-    //  align-items: center;
-    //}
-
-    .bar1 {
-      width: 35px;
-      height: 3px;
-      background-color: white;
-      margin: 5px 0;
-      transition: 0.3s;
-      transform-origin: center;
-    }
-
-    .bar2, .bar3 {
-      width: 35px;
-      height: 3px;
-      background-color: white;
-      margin: 5px 0;
-      transition: 0.3s;
-      transform-origin: center;
-    }
-
-    .change .bar1 {
-      -webkit-transform: rotate(-50deg) translate(-5px, 6px);
-      transform: rotate(-50deg) translate(-5px, 6px);
-      transform-origin: center;
-    }
-
-    .change .bar2 {
-      opacity: 0;
-      transform-origin: center;
-    }
-
-    .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-6px, -8px);
-      transform: rotate(45deg) translate(-6px,-8px);
-      transform-origin: center;
-    }
-
-    .cursor {
-      cursor: pointer;
-    }
-
-    .nav-bar-title {
-      margin-left: 1rem;
-    }
-
-    .header-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 50px;
-      margin-top: 2rem;
-    }
-
-    .header {
-      height: 30vh;
-      background-image: url("/img/bg-img-header-jpg.jpg");
-      //background-size: 100% contain;
-      background-position: center;
-      background-attachment: fixed;
-    }
-
-    .header-sub-title {
-      line-height: 30px;
-    }
-
-    .header-under-sub-title {
-      line-height: 2px;
-    }
-
-    .nav-bar-title-text, .nav-bar-item {
-      visibility: hidden;
-      clear: both;
-      display: none;
-    }
-
-    .nav-bar-item-btn {
-      display: flex;
-      justify-content: center;
-
-    }
-
-    .revol-title {
-      font-family: Montserrat, sans-serif;
-      color: #635c74;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 30px;
-      text-align: center;
-    }
-
-    .revol-sub-title {
-      margin-bottom: 1rem;
-      font-family: Lato, sans-serif;
-      color: #323232;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 14px;
-      text-align: center;
-    }
-
-    .github-button {
-      display: flex;
-      justify-content: left;
-    }
+  .bar1 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+    transform-origin: center;
   }
+
+  .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+    transform-origin: center;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-50deg) translate(-5px, 6px);
+    transform: rotate(-50deg) translate(-5px, 6px);
+    transform-origin: center;
+  }
+
+  .change .bar2 {
+    opacity: 0;
+    transform-origin: center;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+    transform-origin: center;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  .nav-bar-title {
+    margin-left: 1rem;
+  }
+
+  .header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 2rem;
+  }
+
+  .header {
+    height: 30vh;
+    background-image: url("/img/bg-img-header-jpg.jpg");
+    //background-size: 100% contain;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .header-sub-title {
+    line-height: 30px;
+  }
+
+  .header-under-sub-title {
+    line-height: 2px;
+  }
+
+  .nav-bar-title-text, .nav-bar-item {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+
+  .nav-bar-item-btn {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .revol-title {
+    font-family: Montserrat, sans-serif;
+    color: #635c74;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .revol-sub-title {
+    margin-bottom: 1rem;
+    font-family: Lato, sans-serif;
+    color: #323232;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .github-button {
+    display: flex;
+    justify-content: left;
+  }
+}
 
