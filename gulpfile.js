@@ -21,7 +21,7 @@ gulp.task('imagemin', () =>
 );
 
 gulp.task('clean-dist', () => {
-    return gulp.src('./dist/', {read: false})
+    return gulp.src('!./dist/modules/, ./dist/', {read: false})
         .pipe(clean());
 });
 

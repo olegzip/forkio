@@ -1,3 +1,5 @@
-$(document).ready(function(){
-    $('.carousel__list').slick();
+$('.carousel__list').slick({
+    adaptiveHeight: false,
+    mobileFirst: true
+
 });
