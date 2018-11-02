@@ -37,8 +37,7 @@
     display: inline-grid;
     grid-column-gap: 23px;
     grid-row-gap: 7px;
-    grid-template-areas: 'img name'
-                          'img nick';
+    grid-template-areas: 'img name' 'img nick';
     align-items: center;
     justify-content: center;
   }
@@ -98,9 +97,7 @@
   &-arrow {
     width: 20px;
     height: 20px;
-    border: 1px solid red;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: no-repeat center center;
   }
 
   &-prev {
@@ -115,4 +112,73 @@
     z-index: 9999;
   }
 
+}
+
+.social {
+
+  &-links {
+    padding: 60px 0;
+  }
+
+  &-item {
+    display: inline-block;
+    max-width: 242px;
+    padding: 0 20px;
+
+    &__followers {
+      margin: 18px auto;
+      color: #848e97;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &-btn {
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+
+    &_github {
+      color: black;
+      background-color: #f3f3f3;
+    }
+
+    &_twitter {
+      color: #fff;
+      background-color: #26a6d1;
+    }
+
+    &_facebook {
+      color: #fff;
+      background-color: #3b5998;
+    }
+  }
+
+}
+
+.fab {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 21px;
+}
+
+.fa-facebook-f {
+  color: #fff;
+}
+
+.fa-twitter {
+  color: #fff;
+}
+
+.fa-github {
+  color: black;
 }
