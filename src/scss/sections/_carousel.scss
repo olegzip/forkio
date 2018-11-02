@@ -4,81 +4,115 @@
   display: table;
 }
 
-.section-carousel{
+.section-carousel {
 
   .container {
-      margin: 0 auto;
-      padding: 0 10px;
-      max-width: 1200px;
-      text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+    text-align: center;
   }
-
 
 }
 
-.carousel{
-  width: 740px;
-  margin: 87px auto 0 auto;
+.carousel {
+  width: 780px;
+  margin: 0 auto;
+  padding: 87px 0 57px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
-  &__list{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  &__list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.carousel-item{
-      text-align: center;
-      border: 1px solid green;
-      
-  &__author{
-    border: 1px solid red;
+.carousel-item {
+  text-align: center;
+
+  &__author {
     margin: 0 auto;
     text-align: left;
     display: inline-grid;
-    grid-gap: 1rem;
-    grid-template-columns: auto auto;
+    grid-column-gap: 23px;
+    grid-row-gap: 7px;
+    grid-template-areas: 'img name'
+                          'img nick';
     align-items: center;
     justify-content: center;
   }
 
-  &__img{
-
+  &__img {
+    grid-area: img;
     display: inline-block;
-    margin: 0 23px;
+    margin: 0;
     width: 85px;
     height: 85px;
     background-image: url("../img/usirpic.jpg");
     border-radius: 50%;
   }
 
-  &__name{
+  &__name {
+    grid-area: name;
+    align-self: end;
     margin: 0;
     color: #635c73;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-weight: 700;
   }
 
-  &__nick{
+  &__nick {
+    grid-area: nick;
+    align-self: start;
+    margin: 0;
     color: #8d81ac;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 400;
   }
 
-  &__comment{
+  &__comment {
     color: #333333;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 20px;
     font-weight: 400;
 
-    &_violet{
+    &_violet {
       color: #8d81ac;
     }
   }
 
-  &__time-post{
-    color: blue;
+  &__time-post {
+    color: #848e97;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
   }
+}
+
+.slick {
+
+  &-arrow {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-prev {
+    background-image: url("../img/Arrow_left.jpg");
+    left: -95px;
+    z-index: 9999;
+  }
+
+  &-next {
+    background-image: url("../img/Arrow_right.jpg");
+    right: -95px;
+    z-index: 9999;
+  }
+
 }
