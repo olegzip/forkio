@@ -1,8 +1,84 @@
-.carousel{
-    border: 1px solid green;
-    color: blue;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.section-carousel{
+
+  .container {
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 1200px;
+      text-align: center;
   }
 
+
+}
+
+.carousel{
+  width: 740px;
+  margin: 87px auto 0 auto;
+
+  &__list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
 .carousel-item{
-  border: 1px solid orangered;
+      text-align: center;
+      border: 1px solid green;
+      
+  &__author{
+    border: 1px solid red;
+    margin: 0 auto;
+    text-align: left;
+    display: inline-grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img{
+
+    display: inline-block;
+    margin: 0 23px;
+    width: 85px;
+    height: 85px;
+    background-image: url("../img/usirpic.jpg");
+    border-radius: 50%;
+  }
+
+  &__name{
+    margin: 0;
+    color: #635c73;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__nick{
+    color: #8d81ac;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__comment{
+    color: #333333;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+
+    &_violet{
+      color: #8d81ac;
+    }
+  }
+
+  &__time-post{
+    color: blue;
+  }
 }
