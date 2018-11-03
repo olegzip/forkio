@@ -182,3 +182,28 @@
 .fa-github {
   color: black;
 }
+
+@media screen and (max-width: 992px) {
+
+  .section-carousel {
+
+    .container {
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 992px;
+      text-align: center;
+    }
+
+  }
+
+  .carousel {
+    margin: 0 auto;
+    max-width: 570px;
+
+    &-item {
+      max-width: 568px;
+    }
+  }
+
+}

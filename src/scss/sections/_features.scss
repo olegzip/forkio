@@ -10,17 +10,14 @@
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1200px;
-    height: 720px;
     text-align: center;
     display: grid;
     grid-column-gap: 50px;
     align-content: center;
-    grid-template-areas: 
-    'features title'
-    'features image';
+    grid-template-areas: 'features title' 'features image';
   }
 
-  &-list{
+  &-list {
     height: 542px;
     display: flex;
     flex-direction: column;
@@ -42,8 +39,7 @@
     flex-wrap: nowrap;
     align-items: flex-start;
 
-    
-    &__icon-block{
+    &__icon-block {
       display: inline-block;
       width: 120px;
       height: 90px;
@@ -51,15 +47,15 @@
       margin-right: 23px;
     }
 
-    &__about-block{
+    &__about-block {
       display: inline-block;
       max-width: 365px;
     }
 
-    &__title{
+    &__title {
       margin: 0 0 10px 0;
       color: #323232;
-      font-family: Montserrat;
+      font-family: Montserrat, sans-serif;
       font-size: 16px;
       font-weight: 400;
       line-height: 21px;
@@ -67,26 +63,25 @@
 
     }
 
-    &__desc{
+    &__desc {
       margin: 0;
       color: #848e97;
-      font-family: Montserrat;
+      font-family: Montserrat, sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
     }
-  }  
-    
+  }
+
   &__img-block {
     grid-area: image;
     max-width: 977px;
 
     img {
       width: 100%;
-      height: auto;
     }
 
-  }    
+  }
 }
 
 .section-title-two {
@@ -103,3 +98,42 @@
   }
 
 }
+
+@media screen and (max-width: 992px) {
+
+  .features {
+    overflow: hidden;
+
+    .container {
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 992px;
+      text-align: center;
+      grid-template-areas: 'title' 'features' 'image';
+    }
+
+    &-list {
+      margin: 0 auto;
+    }
+
+    &-item {
+      margin: 0 0 28px 20px;
+      display: inline-grid;
+      grid-template-columns: 1fr 4fr;
+      align-items: center;
+      justify-content: center;
+
+
+      &__about-block {
+        max-width: 100%;
+      }
+
+    }
+
+  }
+
+  .section-title-two {
+    margin: 54px auto;
+  }
+}
+
