@@ -16,15 +16,12 @@
 }
 
 .carousel {
-  width: 780px;
   margin: 0 auto;
   padding: 87px 0 57px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   &__list {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+   text-align: center;
   }
 }
 
@@ -77,6 +74,8 @@
     font-family: Lato, sans-serif;
     font-size: 20px;
     font-weight: 400;
+    padding: 30px 10px 10px 10px;
+    line-height: 40px;
 
     &_violet {
       color: #8d81ac;
@@ -95,20 +94,21 @@
 .slick {
 
   &-arrow {
-    width: 20px;
-    height: 20px;
-    background: no-repeat center center;
+
   }
 
   &-prev {
     background-image: url("../img/Arrow_left.jpg");
-    left: -95px;
+    background-size: auto;
+    left: -14%;
+    top: 65%;
     z-index: 9999;
   }
 
   &-next {
     background-image: url("../img/Arrow_right.jpg");
-    right: -95px;
+    right: -14%;
+    top: 65%;
     z-index: 9999;
   }
 
@@ -123,7 +123,7 @@
   &-item {
     display: inline-block;
     max-width: 242px;
-    padding: 0 20px;
+    padding: 0 18px;
 
     &__followers {
       margin: 18px auto;
@@ -135,9 +135,10 @@
   }
 
   &-btn {
+    box-sizing: border-box;
     display: inline-block;
     position: relative;
-    border-radius: 3px;
+    border-radius: 6px;
     text-decoration: none;
     width: 240px;
     height: 50px;
@@ -149,16 +150,42 @@
     &_github {
       color: black;
       background-color: #f3f3f3;
+
+      &:hover{
+        background-color: #2b414d;
+        color: #fff;
+        .fa-github{
+          color: #ffffff;
+        }
+      }
     }
 
     &_twitter {
       color: #fff;
       background-color: #26a6d1;
+
+      &:hover{
+        border: 1px solid #26a6d1;
+        background-color: #ffffff;
+        color: #26a6d1;
+        .fa-twitter{
+          color: #26a6d1;
+        }
+      }
     }
 
     &_facebook {
       color: #fff;
       background-color: #3b5998;
+
+      &:hover{
+        border: 1px solid #3b5998;
+        background-color: #ffffff;
+        color: #3b5998;
+        .fa-facebook-f{
+          color: #3b5998;
+        }
+      }
     }
   }
 
@@ -199,10 +226,8 @@
 
   .carousel {
     margin: 0 auto;
-    max-width: 570px;
 
     &-item {
-      max-width: 568px;
     }
   }
 
