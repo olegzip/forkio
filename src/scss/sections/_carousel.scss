@@ -21,7 +21,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   &__list {
-   text-align: center;
+    text-align: center;
   }
 }
 
@@ -93,27 +93,43 @@
 
 .slick {
 
-  &-slider{
+  &-slider {
     margin: 0 auto;
-    border: 1px solid red;
     max-width: 734px;
   }
 
-  &-arrow {
+}
 
-  }
+.arrow-prev {
+  color: #a3a3a3;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 
-  &-prev {
-    background-image: url("../img/Arrow_left.jpg");
-    background-size: auto;
-    z-index: 9999;
-  }
+.arrow-next {
+  color: #a3a3a3;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 
-  &-next {
-    background-image: url("../img/Arrow_right.jpg");
-    z-index: 9999;
-  }
-
+.arrow-prev:active, .arrow-next:active, .arrow-prev:focus, .arrow-next:focus {
+  outline: none;
 }
 
 .social {
@@ -153,10 +169,10 @@
       color: black;
       background-color: #f3f3f3;
 
-      &:hover{
+      &:hover {
         background-color: #2b414d;
         color: #fff;
-        .fa-github{
+        .fa-github {
           color: #ffffff;
         }
       }
@@ -166,11 +182,11 @@
       color: #fff;
       background-color: #26a6d1;
 
-      &:hover{
+      &:hover {
         border: 1px solid #26a6d1;
         background-color: #ffffff;
         color: #26a6d1;
-        .fa-twitter{
+        .fa-twitter {
           color: #26a6d1;
         }
       }
@@ -180,11 +196,11 @@
       color: #fff;
       background-color: #3b5998;
 
-      &:hover{
+      &:hover {
         border: 1px solid #3b5998;
         background-color: #ffffff;
         color: #3b5998;
-        .fa-facebook-f{
+        .fa-facebook-f {
           color: #3b5998;
         }
       }
@@ -224,16 +240,12 @@
 
   .carousel {
     margin: 0 auto;
-
-    &-item {
-    }
   }
 
   .slick {
 
     &-slider {
       margin: 0 auto;
-      border: 1px solid green;
       width: 80%;
     }
   }
@@ -253,12 +265,12 @@
   .carousel {
 
     &-item {
-      &__comment{
+      &__comment {
         font-size: 16px;
         line-height: 24px;
       }
 
-      &__time-post{
+      &__time-post {
         font-size: 16px;
       }
     }
@@ -268,7 +280,6 @@
 
     &-slider {
       margin: 0 auto;
-      border: 1px solid blue;
       width: 80%;
     }
   }
@@ -288,23 +299,22 @@
   .carousel {
 
     &-item {
-      &__comment{
+      &__comment {
         font-size: 16px;
         line-height: 24px;
       }
 
-      &__time-post{
+      &__time-post {
         font-size: 16px;
       }
 
-      &__author{
+      &__author {
         grid-template-areas: 'img' 'name' 'nick';
         text-align: center;
       }
 
-      &__img{
+      &__img {
         margin: 0 auto;
-
       }
     }
   }
@@ -312,10 +322,13 @@
   .slick {
 
     &-slider {
+      position: relative;
       margin: 0 auto;
-      border: 1px solid blue;
       width: 75%;
     }
+
   }
 
 }
+
+
