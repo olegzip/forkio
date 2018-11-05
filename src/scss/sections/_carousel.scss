@@ -93,6 +93,12 @@
 
 .slick {
 
+  &-slider{
+    margin: 0 auto;
+    border: 1px solid red;
+    max-width: 734px;
+  }
+
   &-arrow {
 
   }
@@ -100,15 +106,11 @@
   &-prev {
     background-image: url("../img/Arrow_left.jpg");
     background-size: auto;
-    left: -14%;
-    top: 65%;
     z-index: 9999;
   }
 
   &-next {
     background-image: url("../img/Arrow_right.jpg");
-    right: -14%;
-    top: 65%;
     z-index: 9999;
   }
 
@@ -215,11 +217,7 @@
   .section-carousel {
 
     .container {
-      overflow: hidden;
-      margin: 0 auto;
-      padding: 0 10px;
       max-width: 992px;
-      text-align: center;
     }
 
   }
@@ -228,6 +226,95 @@
     margin: 0 auto;
 
     &-item {
+    }
+  }
+
+  .slick {
+
+    &-slider {
+      margin: 0 auto;
+      border: 1px solid green;
+      width: 80%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .section-carousel {
+
+    .container {
+      max-width: 480px;
+    }
+
+  }
+
+  .carousel {
+
+    &-item {
+      &__comment{
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &__time-post{
+        font-size: 16px;
+      }
+    }
+  }
+
+  .slick {
+
+    &-slider {
+      margin: 0 auto;
+      border: 1px solid blue;
+      width: 80%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .section-carousel {
+
+    .container {
+      max-width: 400px;
+    }
+
+  }
+
+  .carousel {
+
+    &-item {
+      &__comment{
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &__time-post{
+        font-size: 16px;
+      }
+
+      &__author{
+        grid-template-areas: 'img' 'name' 'nick';
+        text-align: center;
+      }
+
+      &__img{
+        margin: 0 auto;
+
+      }
+    }
+  }
+
+  .slick {
+
+    &-slider {
+      margin: 0 auto;
+      border: 1px solid blue;
+      width: 75%;
     }
   }
 
