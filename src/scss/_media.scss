@@ -1,5 +1,7 @@
-@media screen and (max-width: 769px) {
-
+@media screen and (max-width: 768px) {
+  .nav-bar-item {
+    margin: 12px;
+  }
 
   .header {
     height: 50vh;
@@ -31,6 +33,10 @@
     font-weight: 400;
     line-height: 15px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
+  }
+
+  .sub-header-just-text {
+    font-size: 16px;
   }
 }
 
