@@ -1,23 +1,40 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+
 
   .header {
     height: 50vh;
   }
 
   .header-title {
-    font-size: 60px;
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 72px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 15px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
   }
 
   .header-sub-title {
-    font-size: 20px;
+    margin: 2rem;
+    font-family: Lato, sans-serif;
+    color: #8d81ac;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 15px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
   }
 
   .header-under-sub-title {
-    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: #848e97;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 15px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .dropdown-menu {
     width: 100%;
     background-color: #303030;
@@ -141,6 +158,8 @@
     font-weight: 400;
     line-height: 19.074px;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem
   }
 
   .github-button {
@@ -220,7 +239,7 @@
   }
 
   .header {
-    height: 30vh;
+    height: 50vh;
     background-image: url("/img/bg-img-header-jpg.jpg");
     //background-size: 100% contain;
     background-position: center;
@@ -265,6 +284,8 @@
     font-weight: 400;
     line-height: 14px;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .github-button {

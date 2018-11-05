@@ -120,24 +120,25 @@ $purple-color: #8d81ac;
   margin-top: 4rem;
   font-family: Montserrat, sans-serif;
   color: #635c73;
-  font-size: 45px; /* Приближение из-за подстановки шрифтов */
+  font-size: 45px;
   font-weight: 700;
-  line-height: 15px; /* Приближение из-за подстановки шрифтов */
+  line-height: 15px;
   text-align: center;
 }
 
 .revol-sub-title {
   display: flex;
   justify-content: center;
-  margin-right: 1rem;
   margin-top: 4rem;
   font-family: Lato, sans-serif;
   color: #323232;
   align-items: center;
   text-align: center;
-  font-size: 21px; /* Приближение из-за подстановки шрифтов */
+  font-size: 21px;
   font-weight: 400;
-  line-height: 23px; /* Приближение из-за подстановки шрифтов */
+  line-height: 23px;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .revol-git-items {
@@ -161,7 +162,6 @@ $purple-color: #8d81ac;
   justify-content: center;
   align-items: center;
 }
-
 
 //.dropdown-menu {
 //  width: 100%;
