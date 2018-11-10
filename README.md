@@ -1,5 +1,3 @@
-# forkio
-Forkio-Step
 ## Задание
 
 Сверстать макет [psd](./Forkio_1200.psd) 
